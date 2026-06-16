@@ -5,6 +5,12 @@ The dynamics are reduced-coordinate (generalized coordinates), the same approach
 MuJoCo uses: each joint adds one degree of freedom and forward dynamics is solved
 with Featherstone's Articulated-Body Algorithm in 6D spatial coordinates.
 
+
+
+https://github.com/user-attachments/assets/00cd0f5e-b1c6-4523-8983-1338a9c66cad
+
+
+
 ## Run
 
 ```bash
