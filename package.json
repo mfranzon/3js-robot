@@ -4,9 +4,9 @@
   "description": "A MuJoCo-like robotics simulator built on Three.js (reduced-coordinate articulated-body dynamics, contacts, URDF, IK).",
   "type": "module",
   "license": "MIT",
-  "author": "Marco Franzon <franzonmarco94@gmail.com>",
-  "homepage": "https://github.com/franzonmarco94/3js-robot",
-  "repository": { "type": "git", "url": "github:franzonmarco94/3js-robot" },
+  "author": "Marco Franzon <43796979+mfranzon@users.noreply.github.com>",
+  "homepage": "https://github.com/mfranzon/3js-robot",
+  "repository": { "type": "git", "url": "github:mfranzon/3js-robot" },
   "keywords": [
     "robotics", "simulation", "physics", "threejs", "webgl",
     "urdf", "mujoco", "articulated-body", "inverse-kinematics", "education"
