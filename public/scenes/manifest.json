@@ -1,0 +1,10 @@
+{
+  "scenes": [
+    { "file": "reacher.json",   "name": "Reacher (click-to-reach IK)", "desc": "3-DOF arm; turn on Reach mode and click a target" },
+    { "file": "pendulum.json",  "name": "Double pendulum",      "desc": "2 DOF, chaotic free swing" },
+    { "file": "playground.json", "name": "Arm + cubes",          "desc": "3-DOF arm, free boxes, body-body contact" },
+    { "file": "branched.json",   "name": "Branched arm + props", "desc": "5-DOF branched tree, mixed props" },
+    { "file": "arm.urdf",        "name": "URDF arm (3-DOF)",      "desc": "Loaded from a standard URDF file" },
+    { "file": "r2d2.urdf",       "name": "R2D2 (floating base)",  "desc": "Real-world URDF on a 6-DOF free base; drive the wheels to roll", "options": { "floatingBase": true } }
+  ]
+}

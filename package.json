@@ -1,0 +1,46 @@
+{
+  "name": "3js-robot",
+  "version": "0.1.0",
+  "description": "A MuJoCo-like robotics simulator built on Three.js (reduced-coordinate articulated-body dynamics, contacts, URDF, IK).",
+  "type": "module",
+  "license": "MIT",
+  "author": "Marco Franzon <franzonmarco94@gmail.com>",
+  "homepage": "https://github.com/franzonmarco94/3js-robot",
+  "repository": { "type": "git", "url": "github:franzonmarco94/3js-robot" },
+  "keywords": [
+    "robotics", "simulation", "physics", "threejs", "webgl",
+    "urdf", "mujoco", "articulated-body", "inverse-kinematics", "education"
+  ],
+  "main": "./dist-embed/robo-sim.umd.cjs",
+  "module": "./dist-embed/robo-sim.js",
+  "unpkg": "./dist-embed/robo-sim.umd.cjs",
+  "jsdelivr": "./dist-embed/robo-sim.umd.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist-embed/robo-sim.js",
+      "require": "./dist-embed/robo-sim.umd.cjs"
+    },
+    "./scenes/*": "./public/scenes/*"
+  },
+  "files": [
+    "dist-embed",
+    "src",
+    "public/scenes",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:embed": "vite build --config vite.lib.config.js",
+    "preview": "vite preview",
+    "test": "node test/physics.test.js",
+    "prepublishOnly": "npm run build:embed"
+  },
+  "dependencies": {
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

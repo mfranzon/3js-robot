@@ -1,0 +1,29 @@
+{
+  "option": { "gravity": [0, -9.81, 0] },
+  "worldbody": {
+    "children": [
+      {
+        "name": "shoulder",
+        "pos": [0, 1.2, 0],
+        "joint": { "type": "hinge", "axis": [0, 0, 1], "damping": 0.1, "init": 0.4 },
+        "geom": { "type": "capsule", "fromto": [0, 0, 0, 0.5, 0, 0], "size": [0.05], "mass": 1.0, "rgba": "#4fb0ff" },
+        "children": [
+          {
+            "name": "elbow",
+            "pos": [0.5, 0, 0],
+            "joint": { "type": "hinge", "axis": [0, 0, 1], "damping": 0.08, "init": 0.6 },
+            "geom": { "type": "capsule", "fromto": [0, 0, 0, 0.45, 0, 0], "size": [0.045], "mass": 0.7, "rgba": "#6ee7a8" },
+            "children": [
+              {
+                "name": "wrist",
+                "pos": [0.45, 0, 0],
+                "joint": { "type": "hinge", "axis": [0, 0, 1], "damping": 0.06, "init": 0.5 },
+                "geom": { "type": "capsule", "fromto": [0, 0, 0, 0.35, 0, 0], "size": [0.04], "mass": 0.5, "rgba": "#ffd166" }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

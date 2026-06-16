@@ -1,0 +1,21 @@
+{
+  "option": { "gravity": [0, -9.81, 0] },
+  "worldbody": {
+    "children": [
+      {
+        "name": "upper",
+        "pos": [0, 2.2, 0],
+        "joint": { "type": "hinge", "axis": [0, 0, 1], "damping": 0.0, "init": 1.5708 },
+        "geom": { "type": "capsule", "fromto": [0, 0, 0, 0, -0.6, 0], "size": [0.04], "mass": 1.0, "rgba": "#4fb0ff" },
+        "children": [
+          {
+            "name": "lower",
+            "pos": [0, -0.6, 0],
+            "joint": { "type": "hinge", "axis": [0, 0, 1], "damping": 0.0, "init": 0.4 },
+            "geom": { "type": "capsule", "fromto": [0, 0, 0, 0, -0.6, 0], "size": [0.04], "mass": 1.0, "rgba": "#ff6b9d" }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "option": { "gravity": [0, -9.81, 0] },
+  "worldbody": {
+    "children": [
+      {
+        "name": "trunk",
+        "pos": [0, 1.7, 0],
+        "joint": { "type": "hinge", "axis": [0, 0, 1], "damping": 0.03, "init": 0.5 },
+        "geom": { "type": "capsule", "fromto": [0, 0, 0, 0, -0.5, 0], "size": [0.055], "mass": 1.2, "rgba": "#4fb0ff" },
+        "children": [
+          {
+            "name": "armL0",
+            "pos": [0, -0.5, 0],
+            "euler": [0, 0, 0.5],
+            "joint": { "type": "hinge", "axis": [0, 0, 1], "damping": 0.02, "init": 0.3 },
+            "geom": { "type": "capsule", "fromto": [0, 0, 0, 0, -0.45, 0], "size": [0.045], "mass": 0.7, "rgba": "#6ee7a8" },
+            "children": [
+              {
+                "name": "armL1",
+                "pos": [0, -0.45, 0],
+                "joint": { "type": "hinge", "axis": [0, 0, 1], "damping": 0.02 },
+                "geom": { "type": "capsule", "fromto": [0, 0, 0, 0, -0.45, 0], "size": [0.04], "mass": 0.5, "rgba": "#a0f0c0" }
+              }
+            ]
+          },
+          {
+            "name": "armR0",
+            "pos": [0, -0.5, 0],
+            "euler": [0, 0, -0.5],
+            "joint": { "type": "hinge", "axis": [0, 0, 1], "damping": 0.02, "init": -0.3 },
+            "geom": { "type": "capsule", "fromto": [0, 0, 0, 0, -0.45, 0], "size": [0.045], "mass": 0.7, "rgba": "#ffd166" },
+            "children": [
+              {
+                "name": "armR1",
+                "pos": [0, -0.45, 0],
+                "joint": { "type": "hinge", "axis": [0, 0, 1], "damping": 0.02 },
+                "geom": { "type": "capsule", "fromto": [0, 0, 0, 0, -0.45, 0], "size": [0.04], "mass": 0.5, "rgba": "#ffe39a" }
+              }
+            ]
+          }
+        ]
+      },
+
+      { "name": "c0", "pos": [-0.8, 0.5, 0.0], "euler": [0.2, 0.1, 0.3], "freejoint": true,
+        "geom": { "type": "box", "size": [0.11, 0.11, 0.11], "mass": 0.5, "rgba": "#ff6b9d" } },
+      { "name": "c1", "pos": [-0.3, 0.7, 0.1], "euler": [0.1, 0.4, 0.2], "freejoint": true,
+        "geom": { "type": "box", "size": [0.12, 0.12, 0.12], "mass": 0.5, "rgba": "#c792ea" } },
+      { "name": "c2", "pos": [0.3, 0.65, -0.1], "euler": [0.3, 0.2, 0.1], "freejoint": true,
+        "geom": { "type": "box", "size": [0.12, 0.12, 0.12], "mass": 0.5, "rgba": "#ffa15c" } },
+      { "name": "c3", "pos": [0.8, 0.55, 0.05], "euler": [0.2, 0.3, 0.4], "freejoint": true,
+        "geom": { "type": "sphere", "size": [0.13], "mass": 0.5, "rgba": "#8fd3ff" } }
+    ]
+  }
+}
